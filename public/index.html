@@ -2,17 +2,15 @@
 <html lang="en" ng-app="portfolio">
 <head>
   <meta charset="UTF-8">
-  <title>Rey | Protfolio</title>
+  <title>Rey | Portfolio</title>
   <link rel="icon" href="img/logo/favicon-32x32.png" type="image/x-icon"  height="4" width="4">
   <link rel="stylesheet" href="/style/mainStyle.css" media="screen" title="no title" charset="utf-8">
 </head>
 <body>
   <menu-directive></menu-directive>
 
-  <ui-view autoscroll></ui-view>
+  <ui-view></ui-view>
 
-  <ui-view name="home" autoscroll="true"></ui-view>
-  <ui-view name="about" autoscroll="true"></ui-view>
-  <ui-view name="projects" autoscroll="true"></ui-view>
+  <script src="scripts/mainScripts.js"></script>
 </body>
 </html>
