@@ -1,4 +1,4 @@
-angular.module("portfolio").config(function($stateProvider, $urlRouterProvider, $locationProvider, $uiViewScrollProvider) {
+angular.module("portfolio").config(function($stateProvider, $urlRouterProvider, $locationProvider) {
   $stateProvider
     .state("home", {
       url: "/",
@@ -24,6 +24,4 @@ angular.module("portfolio").config(function($stateProvider, $urlRouterProvider, 
     enabled: true,
     requireBase: false
   });
-
-  $uiViewScrollProvider.useAnchorScroll();
 });
