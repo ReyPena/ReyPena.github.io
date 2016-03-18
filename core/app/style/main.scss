@@ -9,6 +9,16 @@ html{
 body{
   margin: 0;
 }
+.wrap{
+  height: 100%;
+  margin: 0;
+  padding: 5em 20%;
+}
 
 @import "components/_menu.scss";
-@import "pages/home.scss"
+
+// pages
+@import "pages/_home.scss";
+@import "pages/_about.scss";
+@import "pages/_experience.scss";
+@import "pages/_projects.scss";
