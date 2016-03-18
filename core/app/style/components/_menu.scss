@@ -1,5 +1,8 @@
 .menu {
   padding: 0 1em;
+  position: fixed;
+  width: 99%;
+  background-color: #fff;
   img{
     margin-top: 0.3em;
     float: left;
@@ -20,6 +23,8 @@
         color: #000;
         text-decoration: none;
         margin: 1em;
+        height: 100%;
+        width: 100%;
       }
       &:hover{
         a{
