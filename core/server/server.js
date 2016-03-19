@@ -7,13 +7,15 @@ var express = require("express")
   , app = express()
   , port = 8080;
 
+
   app.use(express.static(path.resolve("public/")));
   app.use(bodyParser.json());
   app.use(cors());
 
-  app.get('/*', function(req, res){
+  app.use(function(req, res){
     res.sendFile(path.resolve("public/index.html"));
   });
+
 
   mongoose.connect(mongoUri);
   mongoose.connection.once("open", function () {

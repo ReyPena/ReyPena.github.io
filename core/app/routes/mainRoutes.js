@@ -8,13 +8,14 @@ angular.module("portfolio").config(function($stateProvider, $urlRouterProvider, 
       url: "/projects",
       templateUrl: "../views/routeViews/projects/projects.html",
     })
-    .state("experience", {
-      url: "/experience",
-      templateUrl: "../views/routeViews/experience/experience.html",
-    })
     .state("about", {
       url: "/about",
       templateUrl: "../views/routeViews/about/about.html",
+      controller: "aboutCtrl"
+    })
+    .state("experience", {
+      url: "/experience",
+      templateUrl: "../views/routeViews/experience/experience.html",
     });
 
   $urlRouterProvider
