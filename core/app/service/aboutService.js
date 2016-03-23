@@ -1,13 +1,91 @@
-angular.module("portfolio").service("aboutService", function ($http, $q) {
+angular.module("portfolio").service("aboutService", function () {
 
-  var deferred = $q.defer();
-
-  $http.get("../json/thechnologies.json").then(function (data) {
-    deferred.resolve(data);
-  });
-
-  this.getTech = function () {
-    return deferred.promise;
-  };
-
+  this.mytechs = [
+    {
+      name:"GitHub",
+      img:"img/tech/github.png",
+      repo:"https://github.com/ReyPena",
+      showMe:false
+    },{
+      name:"HTML",
+      img:"img/tech/html.png",
+      repo:"https://github.com/ReyPena",
+      showMe:false
+    },{
+      name:"CSS",
+      img:"img/tech/css.png",
+      repo:"https://github.com/ReyPena",
+      showMe:false
+    },{
+      name:"Java Script",
+      img:"img/tech/java_script.png",
+      repo:"https://github.com/ReyPena",
+      showMe:false
+    },{
+      name:"Angular",
+      img:"img/tech/angular.png",
+      repo:"https://github.com/ReyPena",
+      showMe:false
+    },{
+      name:"React",
+      img:"img/tech/react.png",
+      repo:"https://github.com/ReyPena",
+      showMe:false
+    },{
+      name:"Node.js",
+      img:"img/tech/node.png",
+      repo:"https://github.com/ReyPena",
+      showMe:false
+    },{
+      name:"MomgoDB",
+      img:"img/tech/mongodb.png",
+      repo:"https://github.com/ReyPena",
+      showMe:false
+    },{
+      name:"jQuery",
+      img:"img/tech/jquery.png",
+      repo:"https://github.com/ReyPena",
+      showMe:false
+    },{
+      name:"Bootstrap",
+      img:"img/tech/bootstrap.png",
+      repo:"https://github.com/ReyPena",
+      showMe:false
+    },{
+      name:"Sass",
+      img:"img/tech/sass.png",
+      repo:"https://github.com/ReyPena",
+      showMe:false
+    },{
+      name:"Less",
+      img:"img/tech/less.png",
+      repo:"https://github.com/ReyPena",
+      showMe:false
+    },{
+      name:"Grunt",
+      img:"img/tech/grunt.png",
+      repo:"https://github.com/ReyPena",
+      showMe:false
+    },{
+      name:"Gulp",
+      img:"img/tech/gulp.png",
+      repo:"https://github.com/ReyPena",
+      showMe:false
+    },{
+      name:"Webpack",
+      img:"img/tech/webPack.png",
+      repo:"https://github.com/ReyPena",
+      showMe:false
+    },{
+      name:"Linux",
+      img:"img/tech/linux.png",
+      repo:"https://github.com/ReyPena",
+      showMe:false
+    },{
+      name:"Electron Shell",
+      img:"img/tech/electronShell.png",
+      repo:"https://github.com/ReyPena",
+      showMe:false
+    }
+  ];
 });

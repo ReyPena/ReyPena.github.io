@@ -1,17 +1,13 @@
 angular.module("portfolio").controller("aboutCtrl", function ($scope, aboutService) {
 
-  var promise = aboutService.getTech();
+  $scope.myTechs = aboutService.mytechs;
 
-  promise.then(function (data) {
-    $scope.techs = data;
-    console.log($scope.techs);
-  });
+  $scope.show = true;
 
-  $scope.cardInfo = true;
+  $scope.cardAction = function (index) {
 
-  $scope.cardAction = function () {
-    console.log("click");
-    return $scope.cardInfo = !$scope.cardInfo;
+    $scope.show = !$scope.show;
+    return $scope.myTechs[index].showMe = !$scope.show;
   };
 
 });
