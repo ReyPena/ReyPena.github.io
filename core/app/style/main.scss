@@ -15,6 +15,11 @@ body {
   padding: 5em 20%;
 }
 
+.view.ng-enter {
+  animation: fadeInLeft 0.5s;
+}
+
+
 @import "./_variables.scss";
 //components
 @import "components/_menu.scss";
