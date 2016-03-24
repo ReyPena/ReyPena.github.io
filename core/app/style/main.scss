@@ -1,27 +1,24 @@
 $main-font: sans-serif;
-
-*{
+* {
   font-family: $main-font;
   // border: 1px solid red;
 }
-html{
+html {
   box-sizing: border-box;
 }
-body{
+body {
   margin: 0;
 }
-.wrap{
+.wrap {
   height: 100%;
   margin: 0;
   padding: 5em 20%;
 }
 
 @import "./_variables.scss";
-
 //components
 @import "components/_menu.scss";
 @import "components/_footer.scss";
-
 // pages
 @import "pages/_home.scss";
 @import "pages/_about.scss";
