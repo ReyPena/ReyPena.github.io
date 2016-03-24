@@ -1,4 +1,5 @@
 $main-font: sans-serif;
+
 *{
   font-family: $main-font;
   // border: 1px solid red;
@@ -15,7 +16,11 @@ body{
   padding: 5em 20%;
 }
 
+@import "./_variables.scss";
+
+//components
 @import "components/_menu.scss";
+@import "components/_footer.scss";
 
 // pages
 @import "pages/_home.scss";

@@ -12,7 +12,7 @@ angular.module("portfolio").controller("mainCtrl", function ($scope, $window, $d
     "| |              | |" + "\n" +
     "| '--------------' |" + "\n" +
     "'------------------'" + "\n" +
-    "|  email: zonickblack@gmail.com                     |" + "\n" +
+    "|  email: zonickblack@gmail.com                   |" + "\n" +
     "|  inkedin: https://www.linkedin.com/in/reypena   |" + "\n" +
     "|  github: https://github.com/ReyPena             |" + "\n" + "\n" +
     "Hello my name is Rey im a web developer, and a passionate designer who is enthusiastic about embracing new technologies and carefully crafting elegant web applications." + "\n" +
