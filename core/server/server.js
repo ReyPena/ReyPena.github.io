@@ -5,7 +5,7 @@ var express = require("express")
   , mongoose = require("mongoose")
   , mongoUri = "mongodb://localhost/portfolio"
   , app = express()
-  , port = 8080;
+  , port = 80;
 
 
   app.use(express.static(path.resolve("public/")));
