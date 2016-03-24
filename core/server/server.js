@@ -3,7 +3,7 @@ var express = require("express")
   , path = require("path")
   , bodyParser = require("body-parser")
   , mongoose = require("mongoose")
-  , mongoUri = "mongodb://localhost:27017/guitar-store"
+  , mongoUri = "mongodb://localhost/portfolio"
   , app = express()
   , port = 8080;
 
