@@ -11,27 +11,19 @@
   }
   img{
     width: 100%;
-    // &.ng-enter{
-    //   animation-delay: 1s;
-    //   animation: fadeIn 1s;
-    // }
-    &.ng-leave{
-      animation-delay: 1s;
-      animation: bounceOut 1s;
-    }
   }
+}
+
+img[ng-if].ng-enter{
+  animation: bounceIn 1s;
+}
+
+.content[ng-if].ng-enter{
+  animation: bounceIn 1s;
 }
 
 .content{
   margin: 0.5em;
-  &.ng-enter{
-    animation-delay: 1s;
-    animation: fadeIn 1s;
-  }
-  &.ng-leave{
-    animation-delay: 1s;
-    animation: bounceOut 1s;
-  }
   h4{
     text-align: center;
   }
