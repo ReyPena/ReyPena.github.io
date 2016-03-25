@@ -29,8 +29,9 @@ html {
 }
 
 
+// libs
+@import "./_animate.scss";
 
-@import "./_variables.scss";
 //components
 @import "components/_menu.scss";
 @import "components/_footer.scss";
