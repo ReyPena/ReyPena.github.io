@@ -5,19 +5,29 @@ $main-font: sans-serif;
 }
 html {
   box-sizing: border-box;
+  &,body{
+    height: 100%;
+  }
+  body {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+  }
 }
-body {
-  margin: 0;
+
+.view{
+  flex: 1;
+  &.ng-enter {
+    animation: fadeInLeft 0.5s;
+  }
 }
+
 .wrap {
   height: 100%;
   margin: 0;
   padding: 5em 20%;
 }
 
-.view.ng-enter {
-  animation: fadeInLeft 0.5s;
-}
 
 
 @import "./_variables.scss";

@@ -4,6 +4,9 @@
   width: 99%;
   background-color: #fff;
   img{
+    &:hover{
+      animation: rotateIn 1s;
+    }
     margin-top: 0.3em;
     float: left;
   }
