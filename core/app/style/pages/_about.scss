@@ -4,12 +4,12 @@
   justify-content: space-around;
 }
 .card{
-  border: 1px solid black;
   margin: 1em;
   &:hover{
     cursor: pointer;
   }
   img{
+    border: 1px solid black;
     width: 100%;
   }
 }
@@ -23,6 +23,8 @@ img[ng-if].ng-enter{
 }
 
 .content{
+  border: 1px solid black;
+  padding: 0.8em;
   margin: 0.5em;
   h4{
     text-align: center;

@@ -19,6 +19,7 @@ var paths = {
     "./bower_components/jquery/dist/jquery.min.js",
     "./bower_components/angular/angular.min.js",
     "./bower_components/angular-animate/angular-animate.min.js",
+    "./bower_components/angular-sanitize/angular-sanitize.min.js",
     "./bower_components/angular-ui-router/release/angular-ui-router.min.js",
     // this is my own js
     "./core/app/app.js",

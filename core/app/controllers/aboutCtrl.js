@@ -1,14 +1,13 @@
-angular.module("portfolio").controller("aboutCtrl", function($scope, $timeout, aboutService) {
+angular.module("portfolio").controller("aboutCtrl", function($scope, aboutService) {
 
   $scope.myTechs = aboutService.mytechs;
 
-  $scope.show = true;
+  $scope.show = false;
 
   var result = document.getElementsByClassName("ng-enter");
 
   $scope.cardAction = function(index) {
-    $scope.show = !$scope.show;
-    $scope.myTechs[index].showMe = !$scope.show;
+    $scope.myTechs[index].showMe = !aboutService.mytechs[index].showMe;
   };
 
 });

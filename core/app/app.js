@@ -1,1 +1,1 @@
-angular.module("portfolio", ["ui.router", "ngAnimate"]);
+angular.module("portfolio", ["ui.router", "ngAnimate", "ngSanitize"]);

@@ -7,6 +7,7 @@ angular.module("portfolio").config(function($stateProvider, $urlRouterProvider, 
     .state("projects", {
       url: "/projects",
       templateUrl: "../views/routeViews/projects/projects.html",
+      controller: "projecstCtrl"
     })
     .state("about", {
       url: "/about",
