@@ -4,10 +4,9 @@ angular.module("portfolio").controller("aboutCtrl", function($scope, aboutServic
 
   $scope.show = false;
 
-  var result = document.getElementsByClassName("ng-enter");
-
-  $scope.cardAction = function(index) {
-    $scope.myTechs[index].showMe = !aboutService.mytechs[index].showMe;
+  $scope.cardAction = function(tech) {
+    var idx = $scope.myTechs.indexOf(tech)
+    $scope.myTechs[idx].showMe = !aboutService.mytechs[idx].showMe;
   };
 
 });

@@ -1,7 +1,16 @@
 <div class="wrap">
   <div class="stack">
+    <h2>Learn Lenguages</h2>
+    <div class="card" ng-repeat="tech in myTechs | filter:{learn:true}" ng-click="cardAction(tech)">
+      <img ng-if="!tech.showMe" src="{{tech.img}}" alt="{{tech.name}}" />
+      <div ng-if="tech.showMe" class="content">
+        <h4>{{tech.name}}</h4>
+        <p>Practice Git: <a href="{{tech.repo}}">Repo</a></p>
+      </div>
+    </div>
 
-    <div class="card" ng-click="cardAction($index)"  ng-repeat="tech in myTechs">
+    <h2>Lenguages to Learn</h2>
+    <div class="card" ng-repeat="tech in myTechs | filter:{learn:false}" ng-click="cardAction(tech)">
       <img ng-if="!tech.showMe" src="{{tech.img}}" alt="{{tech.name}}" />
       <div ng-if="tech.showMe" class="content">
         <h4>{{tech.name}}</h4>
