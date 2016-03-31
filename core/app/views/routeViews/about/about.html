@@ -1,6 +1,6 @@
 <div class="wrap">
   <div class="stack">
-    <h2>Skils</h2>
+    <h2>Skills</h2>
     <div class="card" ng-repeat="tech in myTechs | filter:{learn:true}" ng-click="cardAction(tech)">
       <img ng-if="!tech.showMe" src="{{tech.img}}" alt="{{tech.name}}" />
       <div ng-if="tech.showMe" class="content">
