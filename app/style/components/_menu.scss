@@ -3,6 +3,7 @@
   position: fixed;
   width: 99%;
   background-color: #fff;
+  font-family:  "Roboto", sans-serif;
   img{
     &:hover{
       animation: rotateIn 1s;
@@ -21,7 +22,7 @@
       display: flex;
       height: 100%;
       list-style: none;
-      // align-items: center;
+      text-transform: uppercase;
       a{
         color: #000;
         text-decoration: none;

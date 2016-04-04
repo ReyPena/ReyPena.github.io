@@ -1,21 +1,23 @@
 <!DOCTYPE html>
 <html lang="en" ng-app="portfolio">
+
 <head>
-  <base href="/">
   <meta charset="UTF-8">
   <title>Rey | Portfolio</title>
-  <link rel="icon" href="assets/img/logo/favicon-32x32.png" type="image/x-icon"  height="4" width="4">
+  <link rel="icon" href="assets/img/logo/favicon-32x32.png" type="image/x-icon" height="4" width="4">
   <link rel="stylesheet" href="/style/mainStyle.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">
 </head>
+
 <body ng-controller="mainCtrl">
 
   <menu-directive></menu-directive>
 
-  <div ui-view autoscroll="false" class="view"></div>
+  <div ui-view class="view"></div>
 
   <footer-directive></footer-directive>
 
   <script src="scripts/mainScripts.js"></script>
 </body>
+
 </html>

@@ -7,7 +7,7 @@ angular.module("portfolio").controller("projecstCtrl", function($scope, $sce, pr
       return $sce.trustAsResourceUrl(src);
     }
     else if (!src){
-      return "./img/no-url.png";
+      return "./assets/img/no-url.png";
     }
   };
 
