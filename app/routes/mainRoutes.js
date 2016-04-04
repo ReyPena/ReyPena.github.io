@@ -23,7 +23,7 @@ angular.module("portfolio").config(function($stateProvider, $urlRouterProvider, 
     .otherwise("/");
 
   $locationProvider.html5Mode({
-    enabled: true,
-    requireBase: false
+    enabled: true
+    // requireBase: false
   });
 });
