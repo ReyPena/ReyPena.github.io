@@ -1,0 +1,16 @@
+<div class="wrap">
+  <div class="stack">
+
+    <h2>Skills</h2>
+    <div class="tech" ng-repeat="tech in myTechs | filter:{learn:true}" ng-click="cardAction(tech)">
+        <div class="ball"><span>{ {{tech.name}} }</span></div>
+    </div>
+
+    <h2>Currently Studying</h2>
+    <div class="tech" ng-repeat="tech in myTechs | filter:{learn:false}" ng-click="cardAction(tech)">
+        <div class="ball"><span>{ {{tech.name}} }</span></div>
+    </div>
+
+  </div>
+
+</div>

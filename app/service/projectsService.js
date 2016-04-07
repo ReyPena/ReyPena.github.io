@@ -14,6 +14,13 @@ angular.module("portfolio").service("projectsService", function () {
       url: "",
       git: "https://github.com/ReyPena/notes-personal-project",
       show: false
+    },{
+      name: "Card Game",
+      description: "A simple card game, where the purpose is matching numbers in the less moves possible. Im using jquery creating the engine of the game, the content and some effects, css to style it and creating a good user experience, and html been the bones of the to create a fun match game.",
+      domain: "Card Match",
+      url: "http://card-match.herokuapp.com/",
+      git: "https://github.com/ReyPena/Jquery-memory-game",
+      show: false
     }
   ];
 });

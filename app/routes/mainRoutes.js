@@ -9,10 +9,10 @@ angular.module("portfolio").config(function($stateProvider, $urlRouterProvider, 
       templateUrl: "../views/routeViews/projects/projects.html",
       controller: "projecstCtrl"
     })
-    .state("about", {
-      url: "/about",
-      templateUrl: "../views/routeViews/about/about.html",
-      controller: "aboutCtrl"
+    .state("skills", {
+      url: "/skills",
+      templateUrl: "../views/routeViews/skills/skills.html",
+      controller: "skillsCtrl"
     })
     .state("experience", {
       url: "/experience",
