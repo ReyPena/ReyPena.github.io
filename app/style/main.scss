@@ -31,7 +31,11 @@ html {
 
 
 // libs
-@import url(https://fonts.googleapis.com/css?family=Roboto);
+@font-face {
+  font-family: Roboto;
+  src: url("fonts/Roboto/Roboto-Regular.ttf") format("truetype");
+}
+
 @import "./_animate.scss";
 
 //components
