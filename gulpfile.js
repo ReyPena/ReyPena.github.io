@@ -28,8 +28,10 @@ var paths = {
   // css libraries
   scssLibs: [
     // this is my own css
-    "./bower_components/material-design-iconic-font/dist/css/material-design-iconic-font.min.css",
     "./app/**/*.scss"
+  ],
+  other: [
+    "./bower_components/material-design-iconic-font/dist/**"
   ]
 };
 
@@ -40,6 +42,11 @@ gulp.task('clean', function () {
 gulp.task("copyViews", ["clean"], function(){
   gulp.src(paths.htmlTemplates)
     .pipe(gulp.dest("./views"));
+});
+
+gulp.task("copyOther", function () {
+  gulp.src(paths.other)
+  .pipe(gulp.dest("./style/fonts/iconic-font"));
 });
 
 gulp.task("styles", function () {
@@ -69,4 +76,4 @@ gulp.task("Working", function () {
   console.log("Working and ready");
 });
 
-gulp.task("default", ["watch", "copyViews", "styles", "scripts", "Working"]);
+gulp.task("default", ["watch", "copyViews", "styles", "copyOther", "scripts", "Working"]);
