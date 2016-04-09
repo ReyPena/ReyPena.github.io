@@ -28,6 +28,7 @@ var paths = {
   // css libraries
   scssLibs: [
     // this is my own css
+    "./bower_components/material-design-iconic-font/dist/css/material-design-iconic-font.min.css",
     "./app/**/*.scss"
   ]
 };
