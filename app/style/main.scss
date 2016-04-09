@@ -23,17 +23,10 @@ html {
 }
 
 .wrap {
-  font-family: "Roboto", sans-serif;
+  font-family: sans-serif;
   height: 100%;
   margin: 0;
   padding: 5em 20%;
-}
-
-
-// libs
-@font-face {
-  font-family: Roboto;
-  src: url("fonts/Roboto/Roboto-Regular.ttf") format("truetype");
 }
 
 @import "./_animate.scss";
