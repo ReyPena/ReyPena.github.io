@@ -10,8 +10,8 @@ var gulp = require("gulp")
 var paths = {
   // views and html files
   htmlTemplates: [
-    "./app/views/**",
-    "!./app/views/**/*.css"
+    "./core/app/views/**",
+    "!./core/app/views/**/*.css"
   ],
   // js libraries
   jsLibs: [
@@ -22,8 +22,8 @@ var paths = {
     "./bower_components/angular-sanitize/angular-sanitize.min.js",
     "./bower_components/angular-ui-router/release/angular-ui-router.min.js",
     // this is my own js
-    "./app/app.js",
-    "./app/**/*.js"
+    "./core/app/app.js",
+    "./core/app/**/*.js"
   ],
   // css libraries
   scssLibs: [
@@ -41,12 +41,12 @@ gulp.task('clean', function () {
 
 gulp.task("copyViews", ["clean"], function(){
   gulp.src(paths.htmlTemplates)
-    .pipe(gulp.dest("./views"));
+    .pipe(gulp.dest("./public/views"));
 });
 
 gulp.task("copyOther", function () {
   gulp.src(paths.other)
-  .pipe(gulp.dest("./style/fonts/iconic-font"));
+  .pipe(gulp.dest("./public/style/fonts/iconic-font"));
 });
 
 gulp.task("styles", function () {
@@ -54,7 +54,7 @@ gulp.task("styles", function () {
     .pipe(sass())
     .pipe(uglifyCss())
     .pipe(concat("mainStyle.css"))
-    .pipe(gulp.dest("./style"));
+    .pipe(gulp.dest("./public/style"));
 });
 
 gulp.task("scripts", function () {
@@ -62,7 +62,7 @@ gulp.task("scripts", function () {
     .pipe(ngAnnotate())
     .pipe(concat("mainScripts.js"))
     .pipe(uglify())
-    .pipe(gulp.dest("./scripts"));
+    .pipe(gulp.dest("./public/scripts"));
 });
 
 gulp.task("watch", function() {
