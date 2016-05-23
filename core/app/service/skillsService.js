@@ -23,7 +23,7 @@ angular.module("portfolio").service("skillsService", function () {
       name:"Node.js",
       learn: true
     },{
-      name:"MomgoDB",
+      name:"MongoDB",
       learn: true
     },{
       name:"jQuery",

@@ -21,6 +21,13 @@ angular.module("portfolio").service("projectsService", function () {
       url: "http://card-match.herokuapp.com/",
       git: "https://github.com/ReyPena/Jquery-memory-game",
       show: false
+    },{
+      name: "GitHub Finder",
+      description: "This a app that use GitHub api, and show relevant information, like graph of the languages that the user have use in their entire repositories, also show all the repos with their description and link to the repositories in GitHub. The documentation for the use of the api that i have use is GitHub Api.",
+      domain: "GitHub Finder",
+      url: "http://github-finder.herokuapp.com",
+      git: "https://github.com/ReyPena/github-finder",
+      show: false
     }
   ];
 });
