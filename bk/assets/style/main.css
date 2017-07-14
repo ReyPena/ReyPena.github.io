@@ -1,0 +1,111 @@
+@font-face {
+  font-family: RobotoRegular;
+  src: url(../../bower_components/roboto-googlefont/Roboto-Regular.ttf);
+}
+
+html, body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}
+
+input {
+  border:none;
+  border-bottom:1px solid #757575;
+}
+
+input:focus {
+  outline:none;
+  border-bottom: 2px solid #5264AE;
+}
+
+textarea {
+  box-sizing: border-box;
+  width: 350px;
+  height: 150px;
+}
+
+textarea:focus {
+  border: 2px solid #5264AE;
+}
+
+#main {
+  height: 100%;
+  width: 100%;
+  display: block;
+}
+
+#left {
+  text-align: center;
+  height: 100%;
+  float: left;
+  width: 30%;
+}
+
+form {
+  text-align: center;
+}
+
+.group {
+  margin: 10px 0;
+  min-height: 25px;
+  text-align: center;
+}
+
+label[for=message] {
+  display: block;
+  margin: 10px 0;
+}
+
+a {
+  color: inherit;
+}
+
+.btn {
+  padding: 10px 20px;
+  border: 2px solid #5264AE;
+  background: none;
+  color: #5264AE;
+  cursor: pointer;
+}
+
+.footer-left {
+  margin-top: 100px;
+}
+
+.variable {
+  font-size: 30px;
+}
+
+#right {
+  height: 100%;
+  width: 70%;
+  background-color: #000;
+  float: left;
+  color: #fff;
+}
+
+/*Typed style*/
+.typed-cursor{
+    opacity: 1;
+    -webkit-animation: blink 0.7s infinite;
+    -moz-animation: blink 0.7s infinite;
+    animation: blink 0.7s infinite;
+}
+@keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-webkit-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-moz-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}

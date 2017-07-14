@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Rey | Portfolio</title>
+  <link rel="stylesheet" href="bower_components/material-design-iconic-font/dist/css/material-design-iconic-font.min.css">
+  <link rel="stylesheet" href="assets/style/main.css">
+</head>
+<body>
+  <div id="main">
+    <section id="left">
+      <h2>Rey Pena</h2>
+      <img src="./assets/img/profile.jpg" alt="Profile Picture" width="250">
+
+      <form action="https://formspree.io/zonickblack@gmail.com" method="POST">
+        <div class="group">
+          <label for="name">Name:</label>
+          <input type="text" name="name" id="name" placeholder="Name" required>
+        </div>
+        <div class="group">
+          <label for="email">Email:</label>
+          <input type="email" name="email" id="email" placeholder="Email" required>
+        </div>
+        <div class="group">
+          <label for="message">Message</label>
+          <textarea name="message" id="message" placeholder="Message" required></textarea>
+        </div>
+
+        <input type="hidden" name="_subject" value="message from reypena.tech"/>
+        <input type="submit" class="btn" value="Send">
+      </form>
+
+      <div class="footer-left">
+        <span class="variable">var contactMe = {</span>
+          <a href="https://github.com/ReyPena" class="zmdi-hc-stack zmdi-hc-lg">
+            <i class="zmdi zmdi-circle zmdi-hc-stack-2x"></i>
+            <i class="zmdi zmdi-github-alt zmdi-hc-stack-1x zmdi-hc-inverse"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/reypena" class="zmdi-hc-stack zmdi-hc-lg">
+            <i class="zmdi zmdi-circle zmdi-hc-stack-2x"></i>
+            <i class="zmdi zmdi-linkedin zmdi-hc-stack-1x zmdi-hc-inverse"></i>
+          </a>
+          <a href="mailto:zonickblack@gmail.com" class="zmdi-hc-stack zmdi-hc-lg">
+            <i class="zmdi zmdi-circle zmdi-hc-stack-2x"></i>
+            <i class="zmdi zmdi-email zmdi-hc-stack-1x  zmdi-hc-inverse"></i>
+          </a>
+          <a href="https://www.visualcv.com/reynaldo-pena-caicedo" class="zmdi-hc-stack zmdi-hc-lg">
+            <i class="zmdi zmdi-circle zmdi-hc-stack-2x"></i>
+            <i class="zmdi zmdi-file-text zmdi-hc-stack-1x  zmdi-hc-inverse"></i>
+          </a>
+          <span class="variable">};</span>
+      </div>
+    </section>
+    <section id="right">
+      <p class="intro">
+        <span>[rey@zonickblack] ~>$</span>
+        <span class="x-code"></span>
+      </p>
+    </section>
+  </div>
+  <script src="bower_components/jquery/dist/jquery.min.js" charset="utf-8"></script>
+  <script src="bower_components/typed.js/dist/typed.min.js" charset="utf-8"></script>
+
+  <script src="assets/scripts/index.js" charset="utf-8"></script>
+</body>
+</html>

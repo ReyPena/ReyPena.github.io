@@ -1,26 +1,21 @@
 {
   "name": "portfolio",
-  "version": "0.0.1",
-  "description": "Personal Protfolio",
-  "main": "core/server/server.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "version": "1.0.0",
+  "description": "Rey Portfolio",
+  "main": "assets/app/app.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ReyPena/portfolio.git"
   },
-  "author": "Rey Pena",
-  "license": "ISC",
+  "author": "Rey",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ReyPena/portfolio/issues"
+  },
+  "homepage": "https://github.com/ReyPena/portfolio#readme",
   "dependencies": {
-    "body-parser": "^1.15.0",
-    "cors": "^2.7.1",
-    "del": "^2.2.0",
-    "express": "^4.13.4",
-    "gulp": "^3.9.1",
-    "gulp-concat": "^2.6.0",
-    "gulp-ng-annotate": "^2.0.0",
-    "gulp-sass": "^2.3.1",
-    "gulp-uglify": "^1.5.3",
-    "gulp-uglifycss": "^1.0.6",
-    "gulp-watch": "^4.3.5",
-    "mongoose": "^4.4.12",
-    "path": "^0.12.7"
-  }
+    "bower": "^1.8.0"
+  },
+  "devDependencies": {}
 }

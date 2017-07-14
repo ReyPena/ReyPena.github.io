@@ -1,13 +1,13 @@
 {
   "name": "portfolio",
-  "description": "Personal Protfolio",
-  "main": "core/server/server.js",
+  "description": "Rey Portfolio",
+  "main": "assets/app/app.js",
   "authors": [
-    "Rey Pena"
+    "Rey"
   ],
-  "license": "ISC",
-  "moduleType": [],
-  "homepage": "",
+  "license": "MIT",
+  "homepage": "https://github.com/ReyPena/portfolio",
+  "private": true,
   "ignore": [
     "**/.*",
     "node_modules",
@@ -16,11 +16,7 @@
     "tests"
   ],
   "dependencies": {
-    "angular": "^1.5.3",
-    "jquery": "^2.2.2",
-    "angular-ui-router": "^0.2.18",
-    "angular-animate": "^1.5.3",
-    "angular-sanitize": "^1.5.3",
+    "jquery": "^3.2.1",
     "material-design-iconic-font": "^2.2.0"
   }
 }
